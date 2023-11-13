@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
-    <title>Mi Página Sencilla</title>
+    <title>Proyecto Seminario 5</title>
 </head>
 <body>
     <img src="LogoUca.png" alt="logo de la uca">
@@ -17,73 +17,144 @@
     </div>
     <div><h3>Explorá nuestras secciones</h3>
        <nav>
-        <button onclick="mostrarSeccionMain('Introduccion')">Introduccion</button>
-        <button onclick="mostrarSeccionMain('MEWalsh')">Maria Elena Walsh</button>
+        <button onclick="mostrarSeccionMain('Principito')">El Principito</button>
         <button onclick="mostrarSeccionMain('Berdi')">Antonio Berdi</button>
-        <button onclick="mostrarSeccionMain('RolDeLaMujer')">Rol de la mujer</button></div>
+        <button onclick="mostrarSeccionMain('LOS EJECUTIVOS')">Los Ejecutivos</button>
+        <button onclick="mostrarSeccionMain('Oda Domestica')">Oda Doméstica</button>
+        <button onclick="mostrarSeccionMain('The Beatles')">The Beatles</button></div>
     </nav>
-    <sectionMain id="Introduccion" style="display: none;">
-        <h2>Introduccion</h2>
-        <p>El universo es desmesuradamente inmenso, tanto que en su magnificencia es inabarcable a la razón, incluso atemporal y divino. El hombre, una semilla más del jardín que aflora del polvo, tanto como es llamado a regresar a él. La condición terrenal de mesura y razón a la que nos vemos sumidos, evidencia nuestra estadía y aunque permanecen como facultades inocuas del ser, es en la desmesura propia donde dejamos de ser parte de aquello a lo que pertenecemos, humanidad. Son estas facultades universales, herramientas que preceden del hombre tanto como lo anteceden en el libre albedrío de sus acciones.
-            Es en este último punto de la acción humana donde se centra el siguiente trabajo. Enmarcados en el propósito teológico de la materia, nos adentramos en las anteriores presentaciones en el estudio del hombre y sus relaciones sociales, desde ahí desglosamos las aptitudes humanas, el camino del hombre, como se relaciona con el tiempo, cómo reacciona al contexto, el hábitat natural y ciertos temas de interés del material tales como el medioambiente, el estado de los géneros en la sociedad actual como el rol de la mujer, y un especial énfasis en cómo todo esto converge en las expresiones artísticas a modo de profecía en lo que anuncia y denuncia, excitando las aristas del hombre a despertar, conmoviéndolo tanto desde la palabra como también desde lenguajes universales como la música o la pintura.
-            Todo ello fue trabajado en el anterior trabajo desde “el romance de la muerte de Juan Lavalle”, “el Aleph”, “la novicia rebelde”, “la flauta mágica”, “arena y gimnasia, “futbol”, “Mafalda y los peques”.  Y allí quedaron por tratar para el presente trabajo los tópicos: Arte como profeta, rol de la mujer, el tiempo, el lenguaje del artista.
-            Desde aquí comienza este trabajo, donde hablaremos del arte, el lenguaje del artista, el rol de la mujer, y el tiempo. Estos también nos llevan a hablar en el análisis sobre la sociedad actual, con temas como el medio ambiente, las políticas y el rol de las corporaciones, la desigualdad social, entre otros tópicos que los artistas elegidos tomarán para expresarse.
-            Los artistas elegidos para mostrar la exposición son María Elena Walsh en música y literatura en la canción “Los Ejecutivos”, Antoine de Saint-Exupéry en literatura con “el principito” y Antonio Berni en artes plásticas en sus obras “sin pan y sin trabajo” y “Manifestación”.
-            </p>
+    <sectionMain id="Principito" style="display: none; ">
+        <h2>El Principito</h2>
+        
+        <img src="el-principito-portada.jpg" style="margin-bottom: 10px;">
+        <p>Escrito por Antoine de Saint-Exupéry y publicado en 1943.
+        La historia sigue a un piloto varado en el desierto del Sahara que conoce a un pequeño príncipe que viene de otro planeta. A lo largo de su conversación, el príncipe le cuenta al piloto sobre su vida en su pequeño planeta y las aventuras que ha tenido mientras viajaba por el universo.
+        </p>
+        <p>El libro termina con el príncipe regresando a su planeta después de haber aprendido lecciones valiosas de su encuentro con el piloto. El piloto se encuentra con el príncipe una vez más después de haber sido rescatado del desierto. El pequeño le dice al piloto que se irá pronto, pero que siempre estarán juntos debido a su amistad. La historia concluye con el piloto reflexionando sobre su encuentro con el Principito y cómo ha cambiado su vida para siempre.
+        </p>
+
+        <div class="caja">
+            <div class="sub-caja">
+                <h4>Lenguaje</h4>
+                <ul>
+                    <li>muy <strong>simbólico</strong>, apela a metáforas y un tono un tanto onírico</li>
+                    <li>registro <strong>sencillo</strong>, en formato de libro para chicos</li>
+                    <li>mensaje bastante <strong>indirecto</strong> (poético)</li>
+                    <li>temas <strong>universales</strong> y muy <strong>humanos</strong> (amistad, amor, soledad, identidad, sentido de la vida)</li>
+                </ul> 
+            </div>
+        </div>
+        <div class="separador" style="justify-content: space-between; display: flex;">
+        <img src="el principito primera frase.jpg" id="imagenPopup" style="height: 300px; ">
+                <div class="overlay" id="popupOverlay">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Sólo se ve bien con el corazón; lo esencial es invisible a los ojos"</strong></p>
+                        <button onclick="cerrarPopup()">Volver</button>
+                    </div>
+                </div>
+        <img src="el principito segunda frase.jpg" id="imagenPopup2" style="height: 300px; ">
+                <div class="overlay" id="popupOverlay2">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Fue el tiempo que pasaste con tu rosa lo que la hizo tan importante"</strong></p>
+                        <button onclick="cerrarPopup2()">Volver</button>
+                    </div>
+                </div>
+
+        <img src="el principito tercera frase.png" id="imagenPopup3" style="height: 300px; width: 500px; ">
+                <div class="overlay" id="popupOverlay3">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Si vienes a las cuatro de la tarde, comenzaré a ser feliz desde las tres"</strong></p>
+                        <button onclick="cerrarPopup3()">Volver</button>
+                    </div>
+                </div>
+            </div>
+            <div class="separador" style="justify-content: space-between; display: flex;">
+            <img src="el principito cuarta frase.jpg" id="imagenPopup4" style="height: 300px; ">
+                <div class="overlay" id="popupOverlay4">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Si juzgas a la gente, no tienes tiempo de amarla"</strong></p>
+                        <button onclick="cerrarPopup4()">Volver</button>
+                    </div>
+                </div>
+            
+                <img src="el principito quinta frase.jpg" id="imagenPopup5" style="height: 300px; width: 400px;">
+                <div class="overlay" id="popupOverlay5">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Mi dibujo no fue un fracaso. Simplemente, mi flor aún no había florecido"</strong></p>
+                        <button onclick="cerrarPopup5()">Volver</button>
+                    </div>
+                </div>
+                <img src="el principito sexta frase.jpg" id="imagenPopup6" style="height: 300px;">
+                <div class="overlay" id="popupOverlay6">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"El amor no consiste en mirar al otro, sino en mirar juntos en la misma dirección"</strong></p>
+                        <button onclick="cerrarPopup6()">Volver</button>
+                    </div>
+                </div>
+                <img src="el principito septima frase.jpg" id="imagenPopup7" style="height: 300px;">
+                <div class="overlay" id="popupOverlay7">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <p style="margin:20px ;"><strong>"Los hombres ya no tienen tiempo para conocer nada. Compran las cosas ya hechas a los comerciantes; pero como no existe ningún comerciante de amigos, los hombres ya no tienen amigos"</strong></p>
+                        <button onclick="cerrarPopup7()">Volver</button>
+                    </div>
+                </div>
+            </div>
     </sectionMain>
 
-    <sectionMain id="MEWalsh" style="display: none;">
-        <h2>Maria Elena Walsh</h2>
-        <img src="MEWalsh.jpeg" alt="foto de walsh" style="margin-bottom: 100px;">
-        <p>El arte es un vehículo para la voz del hombre. En él podemos encontrarnos con lo profundo de nuestro ser y despertar algo tanto en nosotros mismos como en otros un movimiento, un cambio de estado. Es en ese momento que entran en juego el verbo conmover  y por consiguiente, el término profeta con su función de anuncio y denuncia.
-            La canción de María Elena Walsh “Los Ejecutivos” es un claro ejemplo de su genialidad al utilizar la ironía y la agudeza para criticar aspectos sociales de su época, aspectos que, lamentablemente, se mantienen vigentes en muchos contextos de la actualidad. Analicemos algunas de las críticas sociales presentes en la letra:
-            </p>
+    <sectionMain id="LOS EJECUTIVOS" style="display: none;">
+        <h2>Los ejecutivos (M. E. Walsh)</h2>
+        
+        <p><h3>La canción de María Elena Walsh “Los Ejecutivos” es un claro ejemplo de su genialidad al utilizar la ironía y la agudeza para criticar aspectos sociales de su época, aspectos que, lamentablemente, se mantienen vigentes en muchos contextos de la actualidad. <br>Analicemos algunas de las críticas sociales presentes en la letra:</h3></p>
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Desigualdad Social</h4>
-                    <p>La canción comienza con una afirmación tajante: "El mundo nunca ha sido para todo el mundo". Esta frase enfatiza una realidad palpable en muchas sociedades: la desigualdad. El mundo, con todos sus recursos y oportunidades, no está distribuido equitativamente entre la población. La desigualdad social ha sido una constante a lo largo de la historia de la humanidad en diferentes culturas y épocas. Walsh lo destaca de manera muy directa en su canción, señalando cómo las riquezas y oportunidades del mundo están destinadas a unos pocos. Este no es solo un problema económico, sino que tiene implicancias en la educación, el acceso a la salud, y en general, en la calidad de vida de las personas.
-                    </p>
+                    <p><strong>"El mundo nunca ha sido para todo el mundo"</strong></p>
                 </div>
             </div>
         
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Poder Corporativo</h4>
-                    <p>El señor que "trajina para darnos la ilusión / De un cielo en tecnicolor" y que solo permite que "muy poquitos / Aprendan a jugar al golf" es una representación de los líderes corporativos y empresariales que dominan la economía y la cultura, a menudo a expensas de la mayoría. A medida que avanzó el siglo XX y comienzos del XXI, las corporaciones han acumulado un poder considerable, no solo en la economía sino también en la política y la cultura. Walsh critica cómo estas entidades crean ilusiones para el público, ofreciendo una vida que solo está al alcance de unos pocos, manteniendo así la estructura de poder intacta.</p>
+                    <p><strong>El señor que "trajina para darnos la ilusión / De un cielo en tecnicolor" y que solo permite que "muy poquitos / Aprendan a jugar al golf"</strong> </p>
                 </div>
             </div>
         
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Medios de comunicacion y manipulacion</h4>
-                    <p>La referencia a "un cielo en tecnicolor" y aconsejar "por televisión" critica cómo los medios de comunicación se utilizan para vender una visión distorsionada de la realidad, una que beneficie a aquellos en el poder y que perpetúe el status quo. Los medios de comunicación masivos tienen el poder de moldear la percepción de la realidad. En la era de la información, esta crítica es más relevante que nunca, ya que el flujo constante de información puede ser manipulado para construir narrativas que respalden los intereses de unos pocos.</p>
+                    <p><strong>"un cielo en tecnicolor";y aconsejar "por televisión" </strong></p>
                 </div>
             </div>
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Consumismo</h4>
-                    <p> La idea de "Ahorrar para tener estatus en la muerte / La eternidad en un reloj" refleja la obsesión de la sociedad moderna con el consumo y la acumulación de bienes, hasta el punto de que incluso la muerte se ve como una oportunidad para demostrar estatus. La cultura del consumismo se ha intensificado con la globalización y la publicidad masiva. En este modelo, el foco está puesto en lo material ya que allí reside la felicidad. Nada más ni nada menos que el concepto "idolatría del dinero". Esta mentalidad perpetúa un ciclo de consumismo en el que las personas buscan constantemente más, sin encontrar satisfacción real.</p>
+                    <p> <strong>"Ahorrar para tener estatus en la muerte / La eternidad en un reloj"</strong></p>
                 </div>
             </div>
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Vacuidad de la elite</h4>
-                    <p>La imagen del ejecutivo "Sonriente y afeitado para siempre" y que "Cultiva un maletín, pero ninguna flor" critica la superficialidad y falta de autenticidad de ciertos sectores de la elite. Walsh juega con la imagen del ejecutivo siempre listo y pulcro pero carente de autenticidad y profundidad. Esta crítica puede ser vista como un reflejo de una elite que se preocupa más por las apariencias y los bienes materiales que por aportar valor real a la sociedad o por cultivar un verdadero compromiso con el bienestar común.</p>
+                    <p><strong>"Sonriente y afeitado para siempre"; "Cultiva un maletín, pero ninguna flor"
+                    </strong></p>
                 </div>
             </div>
             <div class="caja">
                 <div class="sub-caja">
                     <h4>Control y dominio</h4>
-                    <p>El estribillo "Y además tienen la sartén / La sartén por el mango / Y el mango también" es una metáfora poderosa del control absoluto. No solo tienen el instrumento de poder (la sartén), sino también el medio para manejarlo (el mango). Es una crítica a cómo ciertos sectores mantienen todo el poder, sin dejar oportunidad para otros. La imagen de la sartén y el mango simboliza el control total de unos pocos sobre los recursos y oportunidades. Es una crítica a cómo los sistemas están diseñados para mantener a la mayoría en una posición subordinada, sin verdadero poder o influencia. Esto no solo se refiere al control económico, sino también al control de la información, la educación y otros medios que determinan la estructura de poder en la sociedad.</p>
+                    <p><strong>o "Y además tienen la sartén / La sartén por el mango / Y el mango también”</strong></p>
                 </div>
             </div>
+            
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Iih3G0mAeGo" frameborder="0" allowfullscreen></iframe>
 
-            <div class="caja">
-                <div class="sub-caja">
-                    <h4>Conclusion</h4>
-                    <p>María Elena Walsh, con su inconfundible estilo, logra en esta canción retratar una sociedad dominada por el poder corporativo, el consumismo y la manipulación mediática, donde la desigualdad es la norma. Sin embargo, su tono irónico y juguetón también invita a la reflexión y al cuestionamiento, recordándonos la importancia de ser críticos y conscientes de las estructuras de poder que nos rodean asumiendo claramente el rol de profeta.</p>
-                </div>
-            </div>        
     </sectionMain>
 
 
@@ -125,15 +196,16 @@
     </sectionMain>
 
 
-    <sectionMain id="RolDeLaMujer" style="display: none;">
-        <h2>Rol de la mujer</h2>
+    <sectionMain id="The Beatles" style="display: none;">
+        <h2>The Beatles</h2>
        <p>
-        Maria Elena Walsh, Poeta, compositora, cantante, dramaturga, guionista y narradora, es reconocida por sus obras infantiles, sin embargo, como bien fue mencionado con anterioridad gran parte de su carrera se basó en representar a traves de su arte la voz de la sociedad de su epoca y sobre todo en un periodo de su carrera donde se destaco su militancia feminista, cantar y escribir en nombre de las mujeres. 
-Como pudimos ver reflejado en el trabajo práctico anterior, en las distintas disciplinas artísticas se encuentran personajes femeninos  alzando la voz defendiendo los derechos de las mujeres y en reclamo de una justicia social que le dé visibilidad a sus reclamos, Walsh no se quedaba atrás a la hora de hacer notar sus ideales a través de sus poemas y canciones, como podemos ver en el poema “ Oda doméstica” donde mediante diferentes recursos poéticos de escritura como pueden ser la personificación, la comparación o las imágenes sensoriales entre otros, nos muestra la imagen de una mujer sofocada por los estigmas y límites sociales que se les eran impuestos en ese entonces y como se ve aplastada esa idea de poder ser mucho más que amas de casa cumpliendo con ollas y botones en un mundo donde necesita mucho más de la mano de la feminidad en las calles pudiendo aportar desde otros ámbitos que se encontraban por fuera de la cocina de sus casas. 
-Si nos ponemos a pensar, en aquellos personajes femeninos mencionados en el trabajo 1, como sea Mafalda un personaje que marcó la historia a través de cuestionarse y cuestionar a un otro todo lo que se atravesase, cosa que no estaba muy bien visto en las mujeres o niñas tiempo atrás, o también pensamos en Maria personaje principal de la película “ La novicia rebelde”, quien tuvo un rol fundamental en la película por su conexión con la naturaleza y por cómo llevó a los niños de la película a conectar con el medio ambiente y lo más simple y bello de la vida como el disfrute y el juego, podemos notar cómo las mujeres a lo largo de la historia y por medio del arte fueron no solo reflejo de sus sociedades en gritos y de las voces de un montón de mujeres si no que también fueron camino y puente hacia la idea de que se puede construir un mundo mejor. 
-Maria Elena tenía su toque particular de comunicar, con un tinte de sarcasmo, sentido irónico y liviandad logró llegar a muchísimas personas y a sentar las bases de charlas incómodas y debates necesarios sobre tópicos que hace falta abordar para que las diferentes sociedades avanzaran y avanzen en pos de un bien común, con consciencia ambiental, conciencia del otro y de lo que es vivir en comunidad dejando de lado el individualismo, llevando “a la mesa” problemáticas femeninas y cómo influye el rol de la mujer en la sociedad, entre otros temas.
-Para concluir, Maria Elena Walsh, puso su vía de expresión, el arte a través de la pluma y el papel, a disposición de sus ideales y de la gente, haciendo uso del arte como profeta y llegando así a varias generaciones, ya que lo que algún día fue planteado y abordado por ella en sus poemas y canciones, sigue siendo debate y tema de conversación en el día a día de nuestra época, en un mundo que se encuentra muy golpeado por la individualidad, el consumismo y la desconexión con lo que se podría decir a mi parecer que  más importa, la comunidad de uno, es decir la gente, el ambiente y el cuidado de los espacios comunes y el amor como factor común en todo.
-
+        texto the beatles
+       </p>
+    </sectionMain>
+    <sectionMain id="Oda Domestica" style="display: none;">
+        <h2>Oda domestica</h2>
+       <p>
+        texto oda domestica
        </p>
     </sectionMain>
 
@@ -188,6 +260,77 @@ Para concluir, Maria Elena Walsh, puso su vía de expresión, el arte a través 
             document.getElementById(seccionId).style.display = 'block';
         }
     </script>
+
+<script>
+    // Función para mostrar el popup
+    function mostrarPopup() {
+        document.getElementById("popupOverlay").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+
+    function mostrarPopup2() {
+        document.getElementById("popupOverlay2").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup2() {
+        document.getElementById("popupOverlay2").style.display = "none";
+    }
+    function mostrarPopup3() {
+        document.getElementById("popupOverlay3").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup3() {
+        document.getElementById("popupOverlay3").style.display = "none";
+    }
+    function mostrarPopup4() {
+        document.getElementById("popupOverlay4").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup4() {
+        document.getElementById("popupOverlay4").style.display = "none";
+    }
+    function mostrarPopup5() {
+        document.getElementById("popupOverlay5").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup5() {
+        document.getElementById("popupOverlay5").style.display = "none";
+    }
+    function mostrarPopup6() {
+        document.getElementById("popupOverlay6").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup6() {
+        document.getElementById("popupOverlay6").style.display = "none";
+    }
+    function mostrarPopup7() {
+        document.getElementById("popupOverlay7").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarPopup7() {
+        document.getElementById("popupOverlay7").style.display = "none";
+    }
+
+
+    // Asignar un manejador de eventos al hacer clic en la imagen
+    document.getElementById("imagenPopup").addEventListener("click", mostrarPopup);
+    document.getElementById("imagenPopup2").addEventListener("click", mostrarPopup2);
+    document.getElementById("imagenPopup3").addEventListener("click", mostrarPopup3);
+    document.getElementById("imagenPopup4").addEventListener("click", mostrarPopup4);
+    document.getElementById("imagenPopup5").addEventListener("click", mostrarPopup5);
+    document.getElementById("imagenPopup6").addEventListener("click", mostrarPopup6);
+    document.getElementById("imagenPopup7").addEventListener("click", mostrarPopup7);
+</script>
 </body>
 </html>
 

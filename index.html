@@ -8,30 +8,39 @@
 <body>
     <img src="LogoUca.png" alt="logo de la uca">
     <header>
-        <h1>Bienvenido a nuestro proyecto de Seminario 5</h1>
+        <h1>Pagina web de Seminario 5</h1>
     </header>
     
-    <div><h2>nuestro objetivo es contarte mas sobre nuestro proyecto</h2></div>
+    <div><h2>El lenguaje del artista</h2></div>
     
-    <div>Nos adentramos en el estudio del hombre y sus relaciones sociales, desde ahí desglosamos las aptitudes humanas, el camino del hombre, como se relaciona con el tiempo, cómo reacciona al contexto, el hábitat natural y ciertos temas de interés del material tales como el medioambiente, el estado de los géneros en la sociedad actual como el rol de la mujer, y un especial énfasis en cómo todo esto converge en las expresiones artísticas a modo de profecía en lo que anuncia y denuncia, excitando las aristas del hombre a despertar, conmoviéndolo tanto desde la palabra como también desde lenguajes universales como la música o la pintura.
-    </div>
-    <div><h3>Explorá nuestras secciones</h3>
-       <nav>
-        <button onclick="mostrarSeccionMain('Principito')">El Principito</button>
-        <button onclick="mostrarSeccionMain('Berdi')">Antonio Berdi</button>
-        <button onclick="mostrarSeccionMain('LOS EJECUTIVOS')">Los Ejecutivos</button>
-        <button onclick="mostrarSeccionMain('Oda Domestica')">Oda Doméstica</button>
-        <button onclick="mostrarSeccionMain('The Beatles')">The Beatles</button></div>
-    </nav>
+    <div>El arte es un vehículo de expresión para el artista, a través del cual busca conmover al espectador, pero <strong>¿cómo?</strong></div>
+    <ul>
+        <li>Con la <strong>identificación</strong>, esa similaridad que nos muestra que estamos conectados entre nosotros y con algo más grande (trascendencia)</li>
+        <li>El artista se manifiesta de manera <strong>simbólica</strong>, no enteramente racional (lo racional aparece para entender qué herramientas usar para transmitir lo que queremos, pero no es a través de la razón que nos conmueve)</li>
+        <li>Por eso, el arte no requiere indispensablemente de <strong>complejidades</strong> para ser efectivo o un código críptico (algunos artistas son más directos, otros más enrevesados en su manera de plasmar su mensaje)</li>
+        <li>Puede haber diferencia de <strong>registros</strong> según el contexto o para quién esté dirigido (niños o adultos), pero no por eso el contenido es menos profundo.</li>
+        <li>Con los años y las distintas "<strong>lecturas</strong>" en distintas etapas de la vida, el espectador accede a lugares nuevos porque puede identificarse con cosas de aspectos a las que antes no llegaba</li>
+    </ul>
+    <h3>Analisis de diferentes artistas</h3> 
+    <div style="justify-content: right; display: flex;"><button onclick="mostrarSeccionMain('X')">X</button></div>
+   
+    <div style="justify-content: space-around ; display: flex; border-bottom: 5px solid rgba(78, 78, 186, 0.782);margin-bottom: 30px;">
+        <button class="bigbutton" onclick="mostrarSeccionMain('Principito')">El Principito</button>
+        <button class="bigbutton" onclick="mostrarSeccionMain('Berdi')">Antonio Berdi</button>
+        <button class="bigbutton" onclick="mostrarSeccionMain('LOS EJECUTIVOS')">Los Ejecutivos</button>
+        <button class="bigbutton" onclick="mostrarSeccionMain('Oda Domestica')">Oda Doméstica</button>
+        <button class="bigbutton" onclick="mostrarSeccionMain('El rol del artista')">El rol del artista</button></div>
+
+   
     <sectionMain id="Principito" style="display: none; ">
-        <h2>El Principito</h2>
-        
-        <img src="el-principito-portada.jpg" style="margin-bottom: 10px;">
-        <p>Escrito por Antoine de Saint-Exupéry y publicado en 1943.
+
+        <div style="justify-content: space-around; display: flex;">
+        <img src="el-principito-portada.jpg" style="margin-bottom: 10px;"></div>
+        <p><h3>Escrito por Antoine de Saint-Exupéry y publicado en 1943.
         La historia sigue a un piloto varado en el desierto del Sahara que conoce a un pequeño príncipe que viene de otro planeta. A lo largo de su conversación, el príncipe le cuenta al piloto sobre su vida en su pequeño planeta y las aventuras que ha tenido mientras viajaba por el universo.
-        </p>
-        <p>El libro termina con el príncipe regresando a su planeta después de haber aprendido lecciones valiosas de su encuentro con el piloto. El piloto se encuentra con el príncipe una vez más después de haber sido rescatado del desierto. El pequeño le dice al piloto que se irá pronto, pero que siempre estarán juntos debido a su amistad. La historia concluye con el piloto reflexionando sobre su encuentro con el Principito y cómo ha cambiado su vida para siempre.
-        </p>
+    </h3></p>
+        <p><h3>El libro termina con el príncipe regresando a su planeta después de haber aprendido lecciones valiosas de su encuentro con el piloto. El piloto se encuentra con el príncipe una vez más después de haber sido rescatado del desierto. El pequeño le dice al piloto que se irá pronto, pero que siempre estarán juntos debido a su amistad. La historia concluye con el piloto reflexionando sobre su encuentro con el Principito y cómo ha cambiado su vida para siempre.
+        </h3></p>
 
         <div class="caja">
             <div class="sub-caja">
@@ -44,11 +53,14 @@
                 </ul> 
             </div>
         </div>
-        <div class="separador" style="justify-content: space-between; display: flex;">
+        <div><h3>Imagenes y frases</h3></div>
+        <div class="imagen-container" style="justify-content: space-around; display: flex; background-color: bisque;">
+            
         <img src="el principito primera frase.jpg" id="imagenPopup" style="height: 300px; ">
                 <div class="overlay" id="popupOverlay">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito primera frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Sólo se ve bien con el corazón; lo esencial es invisible a los ojos"</strong></p>
                         <button onclick="cerrarPopup()">Volver</button>
                     </div>
@@ -57,6 +69,7 @@
                 <div class="overlay" id="popupOverlay2">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito segunda frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Fue el tiempo que pasaste con tu rosa lo que la hizo tan importante"</strong></p>
                         <button onclick="cerrarPopup2()">Volver</button>
                     </div>
@@ -66,16 +79,18 @@
                 <div class="overlay" id="popupOverlay3">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito tercera frase.png" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Si vienes a las cuatro de la tarde, comenzaré a ser feliz desde las tres"</strong></p>
                         <button onclick="cerrarPopup3()">Volver</button>
                     </div>
                 </div>
-            </div>
-            <div class="separador" style="justify-content: space-between; display: flex;">
+            
+            
             <img src="el principito cuarta frase.jpg" id="imagenPopup4" style="height: 300px; ">
                 <div class="overlay" id="popupOverlay4">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito cuarta frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Si juzgas a la gente, no tienes tiempo de amarla"</strong></p>
                         <button onclick="cerrarPopup4()">Volver</button>
                     </div>
@@ -85,6 +100,7 @@
                 <div class="overlay" id="popupOverlay5">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito quinta frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Mi dibujo no fue un fracaso. Simplemente, mi flor aún no había florecido"</strong></p>
                         <button onclick="cerrarPopup5()">Volver</button>
                     </div>
@@ -93,19 +109,23 @@
                 <div class="overlay" id="popupOverlay6">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito sexta frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"El amor no consiste en mirar al otro, sino en mirar juntos en la misma dirección"</strong></p>
                         <button onclick="cerrarPopup6()">Volver</button>
                     </div>
                 </div>
+            
                 <img src="el principito septima frase.jpg" id="imagenPopup7" style="height: 300px;">
                 <div class="overlay" id="popupOverlay7">
                     <!-- Contenedor del mensaje -->
                     <div class="popup">
+                        <img src="el principito septima frase.jpg" style="height: 300px;">
                         <p style="margin:20px ;"><strong>"Los hombres ya no tienen tiempo para conocer nada. Compran las cosas ya hechas a los comerciantes; pero como no existe ningún comerciante de amigos, los hombres ya no tienen amigos"</strong></p>
                         <button onclick="cerrarPopup7()">Volver</button>
                     </div>
                 </div>
             </div>
+
     </sectionMain>
 
     <sectionMain id="LOS EJECUTIVOS" style="display: none;">
@@ -153,39 +173,50 @@
             </div>
             
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6stlCkUDG_s&list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Iih3G0mAeGo" frameborder="0" allowfullscreen></iframe>
+            <br><a href="https://www.youtube.com/watch?v=Iih3G0mAeGo">Link al video (si hay error)</a>
 
     </sectionMain>
 
 
     <sectionMain id="Berdi" style="display: none;">
         <h2>Antonio Berdi</h2>
-        <img src="Aberdi.jpg" alt="foto de berdi" style="margin-bottom: 100px;">
-        <p>En el aspecto funcional del arte y su invitación a la reflexión que en una de esas puede quizás incluso llegar a la acción, nos centraremos en el análisis de la obra de Antonio Berdi. Este artista plástico es otro ejemplo de la escena local que encarna también el papel de denunciante sobre todo de la crisis social en Latinoamérica. Berdi se atreve a poner sobre la mesa la problemática de la concentración de riquezas y poder en mano de unos pocos haciendo énfasis en los más vulnerados por esta dinámica.
-        </p>
+        <img src="Aberdi.jpg" alt="foto de berdi" style="margin-bottom: 20px;">
+        <p><h3>En el aspecto funcional del arte y su invitación a la reflexión que en una de esas puede quizás incluso llegar a la acción, nos centraremos en el análisis de la obra de Antonio Berdi. Este artista plástico es otro ejemplo de la escena local que encarna también el papel de denunciante sobre todo de la crisis social en Latinoamérica. Berdi se atreve a poner sobre la mesa la problemática de la concentración de riquezas y poder en mano de unos pocos haciendo énfasis en los más vulnerados por esta dinámica.
+        </h3></p>
 
         <div class="caja">
-            <div class="sub-caja">
+            <div class="sub-caja" style="justify-content: space-around; display: flex;">
                 <h4>Sin pan y sin trabajo</h4>
-                <img src="sin pan y sin trabajo CHICA.jpg" alt="foto de berdi" style="margin-bottom: 100px;">
-                <p>La pintura "Sin pan y sin trabajo" de Antonio Berni se sumerge en la cruda realidad de la pobreza durante la Gran Depresión en Argentina. La composición destaca la vulnerabilidad de una familia desfavorecida, mostrándola en condiciones precarias y desesperantes. Los personajes, desposeídos de recursos y oportunidades, expresan su sufrimiento a través de gestos y posturas corporales. La representación detallada de sus rostros refleja la carga emocional de la lucha diaria por la supervivencia.
-                    Berni utiliza colores oscuros y tonos apagados para acentuar la gravedad de la situación, creando una atmósfera de desesperanza. La falta de pan y empleo, como sugiere el título, simboliza la escasez de recursos básicos y oportunidades económicas para los menos privilegiados.
-                   La elección del realismo socialista por parte de Berni refuerza su compromiso con la representación de las luchas y desigualdades sociales. La obra se convierte en una llamada de atención, un testimonio visual de las condiciones injustas que enfrentan los más vulnerables.
-                   </p>
+                <h4>Manifestacion</h4>
             </div>
-        </div>
+        
 
         <div class="caja">
-            <div class="sub-caja">
-                <h4>Manifestacion</h4>
-                <img src="Manifestacion-Berni-CHICA.jpg" alt="foto de berdi" style="margin-bottom: 100px;">
-                <p>En "Manifestación", Berni captura el espíritu de la protesta y la búsqueda de justicia social. La escena de la manifestación se llena de figuras que expresan determinación y unidad en su lucha contra la opresión. Los colores vibrantes y la energía de las masas contrastan con el tono más sombrío de "Sin pan y sin trabajo", sugiriendo la esperanza y la fuerza colectiva en la resistencia. 
-                    Las caras de los manifestantes reflejan una diversidad de emociones, desde la ira hasta la determinación y la solidaridad. Berni captura la dinámica de un movimiento social, destacando la importancia de la acción colectiva en la lucha por los derechos y la igualdad.
-                    La presencia de pancartas y consignas refleja las demandas específicas de los manifestantes, contextualizando la lucha en el contexto de problemas socioeconómicos. La inclusión de detalles específicos y la representación simbólica de la lucha refuerzan la intención del artista de abordar cuestiones sociales apremiantes.
-                    </p>
+            <div class="sub-caja" style="justify-content: space-around; display: flex;">
+                
+                <img src="sin pan y sin trabajo CHICA.jpg" alt="foto de berdi" style="margin-bottom: 20px;" id="imagenspyst">
+                <div class="overlay" id="popupspyst">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <img src="sin pan y sin trabajo CHICA.jpg " style="height: 600px;">
+                        <p style="margin:20px ;"><strong>Sin pan y sin trabajo</strong></p>
+                        <button onclick="cerrarspyst()">Volver</button>
+                    </div> 
+            </div>
+                <img src="Manifestacion-Berni-CHICA.jpg" alt="foto de berdi" style="margin-bottom: 20px;" id="imagenmanif">
+                <div class="overlay" id="popupmanif">
+                    <!-- Contenedor del mensaje -->
+                    <div class="popup">
+                        <img src="Manifestacion-Berni-CHICA.jpg" style="height: 600px;">
+                        <p style="margin:20px ;"><strong>Manifestacion</strong></p>
+                        <button onclick="cerrarmanif()">Volver</button>
+                    </div>
+            </div>
+
             </div>
         </div>
-
+    </div>
         <div class="caja">
             <div class="sub-caja">
                 <h4>Conclusion</h4>
@@ -196,17 +227,87 @@
     </sectionMain>
 
 
-    <sectionMain id="The Beatles" style="display: none;">
-        <h2>The Beatles</h2>
-       <p>
-        texto the beatles
-       </p>
+    <sectionMain id="El rol del artista" style="display: none;">
+        <h2>El rol del artista (The Beatles)</h2>
+        <div style="justify-content: space-around; display: flex;"><h3>El camino</h3><h3>La influencia</h3><h3>La musica</h3></div>
+        <div style="justify-content: space-around; display: flex;">
+        <img src="the beatles el camino.jpg" id="imagenPopup" style="height: 300px; width: 500;" onclick="mostrarSeccion('seccion6')">
+        <img src="la influencia the beatles.jpeg" id="imagenPopup" style="height: 300px; width: 500;" onclick="mostrarSeccion('seccion7')">
+        <img src="la musica the beatles.jpeg" id="imagenPopup" style="height: 300px; width: 500;" onclick="mostrarSeccion('seccion8')">
+        
+    </div>
+        
+        
+    <div>
+        <section id="seccion6" style="display: none;">
+            
+            <div class="caja">
+                <div class="sub-caja">
+                    <ul>
+                        <li><strong>Exploración Personal y Autenticidad</strong><br>Desde sus raíces en Liverpool, los Beatles, liderados por la dupla compositiva Lennon-McCartney, exploraron sus propias experiencias y perspectivas. Canciones como "In My Life" reflejan la autenticidad de sus emociones y recuerdos personales.</li>
+                        <li><br><strong>Desafío y Experimentación</strong><br>Innovadores constantes, los Beatles llevaron la experimentación musical a nuevas alturas con álbumes como "Revolver" y "The White Album". La inclusión de instrumentos no convencionales y técnicas de grabación avanzadas demostró su voluntad de desafiar las normas establecidas.</li>
+                        <li><br><strong>Conexión con la Sociedad</strong><br>Canciones como "Eleanor Rigby" y "A Day in the Life" abordaron cuestiones sociales y políticas, conectando con una generación que buscaba respuestas. La participación activa en movimientos sociales consolidó su posición como defensores del cambio.</li>
+                        </ul> 
+                </div>
+            </div>
+
+
+        </section>   
+        <section id="seccion7" style="display: none;">
+            
+            <div class="caja">
+                <div class="sub-caja">
+                    <ul>
+                        <li><strong>Cambio Cultural</strong><br>La Beatlemanía no solo fue un fenómeno musical, sino también un cambio cultural. La banda fue parte integral de la contracultura de los años 60, influyendo en la moda, la espiritualidad y la actitud social.</li>
+                        <li><br><strong>Creación de Identidad Colectiva</strong><br>"All You Need Is Love" y "Let It Be" se convirtieron en himnos generacionales, creando una identidad colectiva que trascendió las barreras culturales y geográficas. La diversidad de su música reflejaba una voz de unión a imagen de la complejidad de la sociedad tanto de su tiempo, como también aplicable hasta nuestros días.</li>
+                        <li><br><strong>El contexto de la Guerra Fría y The Beatles</strong><br>La Guerra Fría, marcada por tensiones geopolíticas y la amenaza de conflictos nucleares, fue un telón de fondo inconfundible de la era en la que The Beatles emergieron como figuras icónicas. En medio de la polarización global, la banda británica se destacó por su capacidad única para capturar la complejidad de la sociedad de la época en sus letras y melodías. Canciones como "Revolution" exploraron las tensiones políticas y sociales, desafiando las convenciones establecidas y cuestionando el status quo. Mientras el mundo estaba dividido ideológicamente, The Beatles abogaban por la unidad con himnos como "All You Need Is Love", convirtiéndose en voces que trascendían las fronteras y llamaban a la humanidad a encontrar la armonía en medio de la discordia. Este enfoque singular de abordar temas contemporáneos y universales hizo que las canciones de The Beatles resonaran no solo en su tiempo, sino también en las generaciones posteriores, testigos de su capacidad para convertir la discordia en un lenguaje universal de paz y entendimiento.</li>
+                        </ul> 
+                </div>
+            </div>
+
+
+        </section> 
+        <section id="seccion8" style="display: none;">
+            
+            <div class="caja">
+                <div class="sub-caja">
+                    <ul>
+                        <li><strong>La Experiencia Estética</strong><br>La Beatlemanía no solo fue un fenómeno musical, sino también un cambio cultural. La banda fue parte integral de la contracultura de los años 60, influyendo en la moda, la espiritualidad y la actitud social.</li>
+                        <li><br><strong>Desafío a la Percepción</strong><br>"All You Need Is Love" y "Let It Be" se convirtieron en himnos generacionales, creando una identidad colectiva que trascendió las barreras culturales y geográficas. La diversidad de su música reflejaba una voz de unión a imagen de la complejidad de la sociedad tanto de su tiempo, como también aplicable hasta nuestros días.</li>
+                        <li><br><strong>Canción seleccionada</strong><br>Para cerrar este viaje, recomendamos la canción "Let It Be". Esta obra maestra, ha sido interpretada como un mensaje de esperanza y resignación ante la adversidad, recordándonos la importancia de encontrar paz en medio de las tormentas de la vida.</li>
+                        <li><iframe width="560" height="315" src="https://www.youtube.com/watch?v=16-lt83P2yI" frameborder="0" allowfullscreen></iframe>
+                            <a href="https://www.youtube.com/watch?v=16-lt83P2yI"><br>Link al video (si hay error)</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+
+
+        </section>  
+    </div>
+
+
+
     </sectionMain>
+
     <sectionMain id="Oda Domestica" style="display: none;">
         <h2>Oda domestica</h2>
-       <p>
-        texto oda domestica
-       </p>
+        <p><h3>
+            “Oda doméstica” es un poema donde la escritora Maria Elena Walsh mediante su lenguaje simbólico que se ve representado mediante lo retórico e irónico que tanto la identifica, un lenguaje profundo que lleva a la reflexión de temas que nos abarcan a todos de manera directa o indirecta, hace crítica a la  situación social que vivían las mujeres en su época, la cual fue evolucionando y progresando a lo largo del tiempo pero hoy en día la lucha femenina por los derechos e igualdad de oportunidades hacia las mujeres, que tanto defendió, apoyó y reflejó desde su arte Walsh, sentó base a las siguientes generaciones y la misma sigue en pie hacia un futuro mejor.
+        </h3></p>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div style="border: 7px solid #ffffff;justify-content: center; align-items: center; ">
+            <h2 style="margin-top: 20px; margin-left: 20px; margin-right: 20px;">“y en la elaboración del miedo </h2>
+            <h2 style="margin-left: 20px; margin-right: 20px;"> se nos va, se nos va el latido </h2>
+            <h2 style="margin-left: 20px; margin-right: 20px;"> que dedicamos a la locura.” </h2>
+
+        </div>
+        <p style="margin: 20px;"><strong>En este pequeño extracto podemos ver como la escritora refleja ese miedo que se vivía entre las mujeres en la época por tener que encajar en ciertas categorías y estigmas sociales donde las mismas fueron perdiéndose en estos mismos lugares, haciendo alusión al “latido dedicado a la locura” que representa su esencia como personas que se desvanecía lentamente en posibilidades que no estaban a su alcance por ser mujeres.</strong></p>
+        <img src="MEWalsh periodico.jpg" style="height: 600px;">
+        <p>Artículo de la revista HUMOR, 1980</p>
+
+        <p><br><strong> Maria Elena siempre tuvo una gran participación y fue muy abocada a la lucha por los derechos de la mujer, poniendo su arte a disolución de la sociedad para así ser vehículo para expresar y representar a todas las mujeres de su época. </strong></p>
+    </div>
     </sectionMain>
 
 
@@ -219,10 +320,11 @@
             document.getElementById(seccionId).style.display = 'block';
         }
     </script>
-
+ <div class="pie-de-pagina">
 <nav style="border-top: 5px solid rgba(78, 78, 186, 0.782); margin-top: 20px;">
     <div>¿Quiénes somos?</div>
     <div>Somos alumnos de 5to año de la UCA haciendo un proyecto de Seminario 5 ¡Conócenos!.</div>
+    <!--
     <button onclick="mostrarSeccion('seccion1')">nombre 1</button>
     <button onclick="mostrarSeccion('seccion2')">nombre 2</button>
     <button onclick="mostrarSeccion('seccion3')">nombre 3</button>
@@ -249,7 +351,9 @@
         <h2>nombre 5</h2>
         <p>descripcion n5.</p>
     </section>
+-->
 </nav>
+</div>
 
     <script>
         function mostrarSeccion(seccionId) {
@@ -320,6 +424,22 @@
     function cerrarPopup7() {
         document.getElementById("popupOverlay7").style.display = "none";
     }
+    function mostrarspyst() {
+        document.getElementById("popupspyst").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarspyst() {
+        document.getElementById("popupspyst").style.display = "none";
+    }
+    function mostrarmanif() {
+        document.getElementById("popupmanif").style.display = "flex";
+    }
+
+    // Función para cerrar el popup
+    function cerrarmanif() {
+        document.getElementById("popupmanif").style.display = "none";
+    }
 
 
     // Asignar un manejador de eventos al hacer clic en la imagen
@@ -330,6 +450,8 @@
     document.getElementById("imagenPopup5").addEventListener("click", mostrarPopup5);
     document.getElementById("imagenPopup6").addEventListener("click", mostrarPopup6);
     document.getElementById("imagenPopup7").addEventListener("click", mostrarPopup7);
+    document.getElementById("imagenspyst").addEventListener("click", mostrarspyst);
+    document.getElementById("imagenmanif").addEventListener("click", mostrarmanif);
 </script>
 </body>
 </html>

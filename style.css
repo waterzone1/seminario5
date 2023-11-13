@@ -1,7 +1,24 @@
+    /* Estilo para los botones */
+    .bigbutton {
+        background-color: #9DC6E6;
+        color: white;
+        border: none;
+        padding: 15px 30px; /* Aumentamos el relleno para hacer los botones más grandes */
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px; /* Aumentamos el tamaño del texto */
+    }
+
+    /* Estilo para el botón al pasar el mouse sobre él */
+    button:hover {
+        background-color: #0056b3;
+    }
 
     body {
         font-family: Arial, sans-serif;
-        background-color: rgb(155, 218, 239);
+        background-color: #E6F7FF;
+        margin-bottom: 100px;
     }
     h1 {
         color: rgb(6, 6, 6);
@@ -14,6 +31,7 @@
         flex: 1;
         padding: 10px;
         border: 3px solid #ffffff;
+        background-color: #9DC6E6;
 
         margin: 5px;
     }
@@ -81,3 +99,38 @@
             cursor: pointer;
             transform: scale(1.1);
         }
+
+        #imagenspyst:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        #imagenmanif:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        /* Estilo para el pie de página */
+
+
+        .pie-de-pagina {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999; /* Valor alto para asegurarse de que esté en la parte superior */
+}
+.imagen-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Opcional: ajusta el espacio entre las imágenes */
+    max-width: 100%; /* Asegura que el contenedor no sea más ancho que su contenedor padre */
+}
+
+.imagen-container img {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que el contenedor */
+    height: auto; /* Mantiene la proporción original de las imágenes */
+    margin-bottom: 10px; /* Espacio entre las imágenes (ajusta según tus preferencias) */
+}
